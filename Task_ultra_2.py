@@ -46,7 +46,27 @@ def find_numbers_func():
                 result_array.append(min_num)
             min_num += 1
 
-    print(result_array) # Вывод на экран всех вариантов
+    # Проверка суммы чисел пятизначного числа
+    if k == 4:
+        min_num = 10000
+        max_num = 100000
+        while min_num < max_num:
+            word_num = str(min_num)
+            if int(word_num[0]) + int(word_num[1]) + int(word_num[2]) + int(word_num[3]) + int(word_num[4]) == s:
+                result_array.append(min_num)
+            min_num += 1
+    
+    # Проверка суммы чисел шестизначного числа
+    if k == 4:
+        min_num = 100000
+        max_num = 1000000
+        while min_num < max_num:
+            word_num = str(min_num)
+            if int(word_num[0]) + int(word_num[1]) + int(word_num[2]) + int(word_num[3]) + int(word_num[4]) + int(word_num[5]) == s:
+                result_array.append(min_num)
+            min_num += 1
+
+    #print(result_array) # Вывод на экран всех вариантов
     return len(result_array)
 
 # ======================== #
