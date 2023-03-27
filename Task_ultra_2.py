@@ -47,7 +47,7 @@ def find_numbers_func():
             min_num += 1
 
     # Проверка суммы чисел пятизначного числа
-    if k == 4:
+    if k == 5:
         min_num = 10000
         max_num = 100000
         while min_num < max_num:
@@ -57,7 +57,7 @@ def find_numbers_func():
             min_num += 1
     
     # Проверка суммы чисел шестизначного числа
-    if k == 4:
+    if k == 6:
         min_num = 100000
         max_num = 1000000
         while min_num < max_num:
